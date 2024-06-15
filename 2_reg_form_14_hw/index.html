@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Registration</title>
+  </head>
+  <body>
+    <div class="form-container" id="registrationFormContainer">
+      <form id="registrationForm">
+        <div class="names">
+          <label class="media"
+            >Name:<input
+              type="text"
+              class="userSername"
+              placeholder="your name"
+          /></label>
+          <label
+            >Phone number:<input
+              type="text"
+              class="userTelephone"
+              placeholder="your number"
+          /></label>
+        </div>
+        <div class="userEm">
+          <label
+            >Email:<input
+              type="email"
+              class="userEmail"
+              placeholder="your email"
+          /></label>
+        </div>
+        <div class="userP">
+          <label
+            >Password:<input
+              type="password"
+              class="userPassword"
+              placeholder=" your password"
+          /></label>
+          <span class="passwordControlRegistration"></span>
+        </div>
+
+        <div class="contSubscribe">
+          <label
+            ><input type="checkbox" class="subscribe" />Subscribe to
+            newsletter</label
+          >
+        </div>
+        <div class="confirm">
+          <input class="submitBtn" type="submit" />
+          <input class="resetBtn" type="reset" />
+        </div>
+      </form>
+    </div>
+
+    <div class="form-container hidden" id="authorizationFormContainer">
+      <form id="authorizationForm">
+        <div class="userLogin">
+          <label
+            >*Login:<input type="text" id="userLogin" placeholder="your email "
+          /></label>
+          <label
+            >*Password:
+            <div class="userPasswordAutorization">
+              <input
+                type="password"
+                id="passwordInput"
+                placeholder="your password"
+                name="password"
+              />
+              <span class="passwordControl"></span>
+            </div>
+          </label>
+        </div>
+        <div class="confirmAutorization">
+          <input class="submitBtnAuthorization" type="submit" />
+          <input class="resetBtnAuthorization" type="reset" />
+        </div>
+      </form>
+    </div>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>

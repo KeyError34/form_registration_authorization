@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20%;
+  background-color: rgb(177, 231, 231);
+}
+
+#registrationForm {
+  padding: 1rem;
+  width: max-content;
+  border-radius: 20px;
+  background-color: #008b8b;
+}
+.names {
+  display: flex;
+  width: max-content;
+  gap: 10px;
+}
+
+.names label,
+.userP label,
+.userEm label {
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.userSername,
+.userTelephone,
+.userEmail,
+.userPassword {
+  min-height: 25px;
+  margin-top: 8px;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+}
+
+.userP {
+  position: relative;
+}
+.contSubscribe {
+  text-align: center;
+  color: aliceblue;
+}
+.subscribe {
+  margin: 10px;
+  padding-left: 15px;
+}
+.confirm {
+  display: flex;
+  gap: 10px;
+}
+.submitBtn,
+.resetBtn {
+  min-height: 30px;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  height: 25px;
+}
+
+.passwordControlRegistration {
+  position: absolute;
+  top: 70%;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  background: url("/images/clows.svg") no-repeat center center;
+  background-size: contain;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 450px) {
+  .names {
+    flex-direction: column;
+    gap: 0;
+  }
+  .contSubscribe {
+    text-align: start;
+    padding-bottom: 5px;
+  }
+  .subscribe {
+    margin: 8px 2px 8px 0px;
+    padding-left: 0px;
+  }
+
+  .media {
+    margin-top: 0;
+  }
+}
+
+#authorizationForm {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: max-content;
+  border-radius: 10px;
+  border: none;
+  background-color: #008b8b;
+  gap: 10px;
+}
+
+.userLogin label {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin-bottom: 2px;
+}
+
+.userLogin input {
+  margin-bottom: 10px;
+  margin-top: 5px;
+  height: 25px;
+  min-width: 250px;
+  padding-left: 5px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rosybrown;
+}
+
+.userPasswordAutorization {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.passwordControl {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  background: url("/images/clows.svg") no-repeat center center;
+  background-size: contain;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.view {
+  background: url("/images/open.svg") no-repeat center center;
+  background-size: contain;
+}
+
+.confirmAutorization {
+  display: flex;
+  gap: 10px;
+}
+.submitBtnAuthorization,
+.resetBtnAuthorization {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  height: 20px;
+  color: black;
+  box-shadow: 2px 2px 4px rosybrown;
+}
+
+.hidden { display: none; }
+.form-container { margin-bottom: 20px; } 
